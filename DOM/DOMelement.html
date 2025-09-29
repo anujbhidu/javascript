@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+  <p id="para"></p>
+  <h2></h2>
+  <p class="para1"></p>
+  <h2 id="para2"></h2>
+  <h2 class="query"></h2>
+  <script>
+     // <!--html element get element by Id-->
+    document.getElementById("para").innerHTML="Hello World";
+
+    // html element get element by tag name.
+    document.getElementsByTagName("h2")[0].innerHTML="DOM Document";
+
+    // html element get element by class name.
+    document.getElementsByClassName("para1").innerHTML="This is the paragraph text";
+
+    // using query selector 
+    document.querySelector("#para2").innerHTML = "Hello Bhai";
+
+    // using query selector All
+    document.querySelectorAll(".query")[0].innerHTML="Using query selector all";
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <button id="myBtn">Click me</button>
+    <button id="myDiv">Mouse Over</button>
+    <script>
+        const btn = document.getElementById("myBtn");
+        btn.addEventListener("click",()=>{
+            alert("Button was clicked");
+            
+        })
+
+        const div = document.getElementById("myDiv");
+        div.addEventListener("mouseover",()=>{
+            console.log("Mouse entered!");
+            
+        })
+        div.addEventListener("mouseout",()=>{
+            console.log("Mouse Left!");
+            
+        })
+
+        function greet(){
+            console.log("Hello");
+            
+        }
+
+        btn.addEventListener("click",greet);
+        btn.removeEventListener("click",greet);
+
+    </script>
+</body>
+</html>
