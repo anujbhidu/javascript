@@ -46,3 +46,9 @@ console.log(r2);// return timestamp
 
 console.log(date);
 
+
+let date1 = new Date();
+
+let time = date1.getHours() + ":" + date1.getMinutes() + ":" + date1.getSeconds();
+
+console.log(time);

@@ -17,6 +17,7 @@ grayColor[0].addEventListener("click", function () {
   cartButton.style.backgroundColor = "gray";
   itemTag.style.backgroundColor = "gray";
   imageCard.style.backgroundImage = 'url("/DOM/grayThar.jpg")';
+  
 });
 
 blackColor.addEventListener("click", function () {
