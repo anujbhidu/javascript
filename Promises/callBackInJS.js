@@ -22,7 +22,7 @@
 
 // anonymous function as a callback
 
-//function greet(name, callback) {
+// function greet(name, callback) {
 //   console.log(`hello ${name}`)
 //   callback();
 // }
@@ -45,12 +45,45 @@
 
 // CallBack Hell
 
-setTimeout(() => {
-  console.log("task 1 execute");
-  setTimeout(() => {
-    console.log("task 2 execute");
-    setTimeout(() => {
-      console.log("task 3 execute");
-    },1000);
-  },1000);
-}, 1000);
+// setTimeout(() => {
+//   console.log("task 1 execute");
+//   setTimeout(() => {
+//     console.log("task 2 execute");
+//     setTimeout(() => {
+//       console.log("task 3 execute");
+//     },1000);
+//   },1000);
+// }, 1000);
+
+// undrstanding the concept of promise
+
+// how is it works and what are the purpose of the promise and its
+
+// works on real life what are the flows of this code
+
+// how to relate the promise concept in real life
+
+// let myPromise = new Promise((resolve, reject) => {
+//   let workDone = false;
+
+//   if (workDone) {
+//     resolve("Work completed successfully")
+//   } else {
+//     reject("Work failed")
+//   }
+// })
+
+// myPromise
+//   .then(result => {
+//   console.log(result);
+  
+//   })
+//   .catch(error => {
+//   console.log(error);
+  
+//})
+
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//   .then(response => response.json())
+//   .then(data => console.log(data))
+//   .catch(error => console.log("Error:", error));
