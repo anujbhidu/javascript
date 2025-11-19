@@ -5,6 +5,6 @@
 
 
 document.getElementById("list").addEventListener("click", (event) => {
-    console.log("You clicked: ",event.target.innerText);
+    console.log("You clicked: ", event.target.innerText);
     
 })
