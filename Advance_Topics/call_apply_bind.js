@@ -48,3 +48,19 @@ const man2 = {
 
 let res1 = man.fullName1.apply(man2, ["Oslo", "Norway"]) // takes arguments as array form 
 console.log(res1);
+
+// bind method borrow karta hai method ko
+
+const man3 = {
+  fullName1: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+const man4 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+let res2 = man3.fullName1.bind(man4) // borrow the fullname method from man3. 
+console.log(res1);
